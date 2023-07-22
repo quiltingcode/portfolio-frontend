@@ -16,3 +16,7 @@ The frontend and backend sites are both deployed through Heroku, and the API dat
 
 ![Homepage](../portfolio-frontend/Images/homepage.png)
 ![Project Page](../portfolio-frontend/Images/project-page.png)
+
+## Credits
+
+1. In order to make a more interesting style navbar, I wanted to try something new and create a sidebar links panel which remained in place whilst the rest of the page can scroll up and down. A sort of sticky side footer. I looked at this[Stack Overflow Article](https://stackoverflow.com/questions/60482018/make-a-sidebar-from-react-bootstrap) as an example.

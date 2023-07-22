@@ -1,24 +1,37 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const NavBar = () => {
+
+
+
+const SideBar = () => {
     return (
-        <Navbar className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            Signed in as: <a href="#login">Mark Otto</a>
-          </Navbar.Text>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-    )
+      <>
+    
+            <Nav className="col-md-12 d-none d-md-block bg-light sidebar"
+            activeKey="/home"
+            onSelect={selectedKey => alert(`selected ${selectedKey}`)}
+            >
+                <div className="sidebar-sticky"></div>
+            <Nav.Item>
+                <Nav.Link href="/home">Active</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link eventKey="link-1">Link</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link eventKey="link-2">Link</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link eventKey="disabled" disabled>
+                Disabled
+                </Nav.Link>
+            </Nav.Item>
+            </Nav>
+          
+        </>
+    );
 }
 
-export default NavBar
+export default SideBar
 
